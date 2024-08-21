@@ -1,0 +1,44 @@
+21-08-2024 07:41:49.794 [restartedMain] INFO 
+				com.jts.UploadFileApplication.logStarting - Starting UploadFileApplication using Java 22.0.1 with PID 2480 (C:\Task1\upload-file-main\target\classes started by DAY in C:\Task1\upload-file-main)
+21-08-2024 07:41:49.799 [restartedMain] INFO 
+				com.jts.UploadFileApplication.logStartupProfileInfo - No active profile set, falling back to 1 default profile: "default"
+21-08-2024 07:41:59.615 [restartedMain] INFO 
+				com.jts.UploadFileApplication.logStarted - Started UploadFileApplication in 11.156 seconds (process running for 12.588)
+21-08-2024 07:54:24.594 [http-nio-8080-exec-4] INFO 
+				com.jts.service.FilesService.storeFilesIntoDB - Enter into uploadFilesIntoDB method
+21-08-2024 07:54:24.694 [http-nio-8080-exec-4] INFO 
+				com.jts.service.FilesService.storeFile - File uploaded successfully into database with id 1
+21-08-2024 08:00:55.721 [http-nio-8080-exec-6] INFO 
+				com.jts.service.FilesService.storeFilesIntoDB - Enter into uploadFilesIntoDB method
+21-08-2024 08:00:55.730 [http-nio-8080-exec-6] INFO 
+				com.jts.service.FilesService.storeFile - File uploaded successfully into database with id 2
+21-08-2024 08:01:48.128 [restartedMain] INFO 
+				com.jts.UploadFileApplication.logStarting - Starting UploadFileApplication using Java 22.0.1 with PID 11516 (C:\Task1\upload-file-main\target\classes started by DAY in C:\Task1\upload-file-main)
+21-08-2024 08:01:48.133 [restartedMain] INFO 
+				com.jts.UploadFileApplication.logStartupProfileInfo - No active profile set, falling back to 1 default profile: "default"
+21-08-2024 08:01:55.107 [restartedMain] INFO 
+				com.jts.UploadFileApplication.logStarted - Started UploadFileApplication in 8.001 seconds (process running for 8.93)
+21-08-2024 08:02:08.541 [http-nio-8080-exec-1] INFO 
+				com.jts.service.FilesService.storeFilesIntoDB - Enter into uploadFilesIntoDB method
+21-08-2024 08:02:08.661 [http-nio-8080-exec-1] INFO 
+				com.jts.service.FilesService.storeFile - File uploaded successfully into database with id 3
+21-08-2024 08:02:08.664 [http-nio-8080-exec-1] INFO 
+				com.jts.service.FilesService.storeFilesIntoDB - Completed uploadFilesIntoDB method with response File uploaded successfully into database
+21-08-2024 08:04:44.364 [restartedMain] INFO 
+				com.jts.UploadFileApplication.logStarting - Starting UploadFileApplication using Java 22.0.1 with PID 17748 (C:\Task1\upload-file-main\target\classes started by DAY in C:\Task1\upload-file-main)
+21-08-2024 08:04:44.369 [restartedMain] INFO 
+				com.jts.UploadFileApplication.logStartupProfileInfo - No active profile set, falling back to 1 default profile: "default"
+21-08-2024 08:04:50.709 [restartedMain] INFO 
+				com.jts.UploadFileApplication.logStarted - Started UploadFileApplication in 7.388 seconds (process running for 8.348)
+21-08-2024 08:05:28.815 [http-nio-8080-exec-1] INFO 
+				com.jts.service.FilesService.storeFilesIntoDB - Enter into uploadFilesIntoDB method
+21-08-2024 08:05:28.976 [http-nio-8080-exec-1] INFO 
+				com.jts.service.FilesService.storeFile - File uploaded successfully into database with id 1
+21-08-2024 08:05:28.981 [http-nio-8080-exec-1] INFO 
+				com.jts.service.FilesService.storeFilesIntoDB - Completed uploadFilesIntoDB method with response File uploaded successfully into database
+21-08-2024 08:05:44.673 [http-nio-8080-exec-3] INFO 
+				com.jts.service.FilesService.storeFilesIntoDB - Enter into uploadFilesIntoDB method
+21-08-2024 08:05:44.687 [http-nio-8080-exec-3] INFO 
+				com.jts.service.FilesService.storeFile - File uploaded successfully into database with id 2
+21-08-2024 08:05:44.689 [http-nio-8080-exec-3] INFO 
+				com.jts.service.FilesService.storeFilesIntoDB - Completed uploadFilesIntoDB method with response File uploaded successfully into database
