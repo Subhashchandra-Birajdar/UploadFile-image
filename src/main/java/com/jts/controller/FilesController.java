@@ -3,6 +3,7 @@ package com.jts.controller;
 import java.io.IOException;
 import java.util.List;
 
+import com.jts.response.ImageResponse;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -43,10 +44,16 @@ public class FilesController {
 
 	// get all images from db
 	@GetMapping("/files")
-	public ResponseEntity<List<Files>> getAllFiles() {
-		List<Files> imageData = filesService.getAllFiles();
-		
-		return ResponseEntity.status(HttpStatus.OK).body(imageData);
+	public ResponseEntity<List<ImageResponse>> getAllFiles() {
+		List<Files> imagelist = filesService.getAllFiles();
+
+		// Convert Files entity list to ImageResponse list
+		List<ImageResponse> responseList = imagelist.stream().map(file -> {
+				String url = "/api/getFilesFromFileSystem/" + file.getName();
+			return new ImageResponse(file.getName(), file.getType(), url);
+		}).toList();
+
+		return ResponseEntity.status(HttpStatus.OK).body(responseList);
 	}
 
 	// get image file using imagename contains
