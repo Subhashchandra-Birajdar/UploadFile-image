@@ -91,6 +91,40 @@ The application will start on http://localhost:8080
 #### Example in Screenshot:
 ![Get - Download Image](https://github.com/user-attachments/assets/8b66c8c1-49a5-4e10-a130-c40aa1b2ce24)
 
+
+## API Reference
+
+#### Upload File
+
+```http
+  POST /api/uploadFilesIntoDB
+```
+
+| Parameter | Type     | Description                |
+| :-------- | :------- | :------------------------- |
+| 'file' | `multipart/form-data` | Required. The file to be uploaded. |  
+
+#### Get all images
+
+```http
+  GET /api/files
+```
+
+| Parameter | Type     | Description                |
+| :-------- | :------- | :------------------------- |
+| 'none' | `string` | **Required**.Retrieves a list of all files with metadata. |
+
+#### Get image by name
+
+```http
+  GET /api/getFilesFromFileSystem/{fileName}
+```
+
+| Parameter | Type     | Description                       |
+| :-------- | :------- | :-------------------------------- |
+| `id`      | `string` | **Required**. image of name to fetch |
+
+
 ## Project Structure
 - **`src/main/java/com/jts/entity/Files.java`:** The entity class representing the files stored in the database.
 - **`src/main/java/com/jts/repository/FileRepository.java`:** The repository interface for accessing file data.
