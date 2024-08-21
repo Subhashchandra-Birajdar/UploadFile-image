@@ -39,7 +39,8 @@ It supports storing files in both a database and the file system. The API includ
    ```bash
    git clone https://github.com/Subhashchandra-Birajdar/UploadFile-image.git
    cd UploadFile-image
-Configure the database:
+   
+2. **Configure the database:**
 
 Open the src/main/resources/application.properties (or application.yml) file and configure your database connection.
 
