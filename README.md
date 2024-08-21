@@ -29,25 +29,21 @@ It supports storing files in both a database and the file system. The API includ
 - **MySQL** database setup
 
 ### Setup Instructions
-
 1. **Clone the repository:**
-
    ```bash
    git clone githttps://github.com/Subhashchandra-Birajdar/UploadFile-image.git
       
-2. **Configure the database:**
-- Open the src/main/resources/application.properties (or application.yml) file and configure your MySQL database connection.
-  ```
+2. **Configure the database:**### Configure the Database
+Open the `src/main/resources/application.properties` (or `application.yml`) file and configure your MySQL database connection.
+```properties
 spring.datasource.url=jdbc:postgres://localhost:5432/your-database-name
 spring.datasource.username=your-username
 spring.datasource.password=your-password
 spring.jpa.hibernate.ddl-auto=update
-```
-#Start point
-- The application will start on http://localhost:8080
 
 # File storage location
 file.storage.path=C:\\path\\to\\your\\file\\storage\\directory\\
+
 
 ### Upload File
 - **URL:** `/api/uploadFilesIntoDB`
