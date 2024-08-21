@@ -1,21 +1,25 @@
-# File Storage and Retrieval API
+
+# Project Title - File Storage and Retrieval API
 
 ## Overview
+
 This project is a Spring Boot application that provides a RESTful API for storing, retrieving, and managing files. 
 It supports storing files in both a database and the file system. The API includes endpoints for uploading files, retrieving files, and downloading files from the file system.
 
 ## Features
+
 - Upload files to the database and file system.
 - Retrieve all files with metadata (name, type, and access URL).
 - Download files by name from the file system.
 - Supports cross-origin requests.
 
 ## Technologies Used
+
 - **Java 17**
 - **Spring Boot**
 - **Spring Data JPA**
 - **Hibernate**
-- **MySQL or Postgresql**
+- **MySQL or PostgreSQL**
 - **Maven**
 - **Lombok**
 - **SLF4J** for logging
@@ -26,24 +30,35 @@ It supports storing files in both a database and the file system. The API includ
 
 - **Java 17** or later installed
 - **Maven** installed
-- **MySQL** database setup
+- **MySQL** or **PostgreSQL** database setup
 
 ### Setup Instructions
+
 1. **Clone the repository:**
+
    ```bash
-   git clone githttps://github.com/Subhashchandra-Birajdar/UploadFile-image.git
-      
-2. **Configure the database:**### Configure the Database
-Open the `src/main/resources/application.properties` (or `application.yml`) file and configure your MySQL database connection.
-```properties
-spring.datasource.url=jdbc:postgres://localhost:5432/your-database-name
+   git clone https://github.com/Subhashchandra-Birajdar/UploadFile-image.git
+   cd UploadFile-image
+Configure the database:
+
+Open the src/main/resources/application.properties (or application.yml) file and configure your database connection.
+
+properties
+```
+spring.datasource.url=jdbc:postgresql://localhost:5432/your-database-name
 spring.datasource.username=your-username
 spring.datasource.password=your-password
 spring.jpa.hibernate.ddl-auto=update
+```
 
 # File storage location
 file.storage.path=C:\\path\\to\\your\\file\\storage\\directory\\
 
+# Start the application:
+The application will start on http://localhost:8080
+
+
+# API Endpoints
 
 ### Upload File
 - **URL:** `/api/uploadFilesIntoDB`
